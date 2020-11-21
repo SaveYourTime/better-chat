@@ -1,12 +1,21 @@
 import { useState } from 'react';
+import firebase from 'firebase/app';
+import { useAuthState } from 'react-firebase-hooks/auth';
 
 export default function MessageInput() {
   const [text, setText] = useState('');
+  const [user] = useAuthState(firebase.auth());
 
   const sendMessage = (e) => {
     e.preventDefault();
     if (!text) return;
-    console.log(`send message: ${text}`);
+    firebase.firestore().collection('messages').add({
+      text,
+      uid: user.uid,
+      username: user.displayName,
+      photoURL: user.photoURL,
+      createdAt: firebase.firestore.FieldValue.serverTimestamp(),
+    });
     setText('');
   };
 

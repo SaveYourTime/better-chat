@@ -14,7 +14,7 @@ export default function Message({ message }) {
         <div>
           <span className="author">{username}</span>
           <div className="metadata">
-            <div className="date">{createdAt.toLocaleString('zh-TW')}</div>
+            <div className="date">{createdAt?.toDate().toLocaleString('zh-TW')}</div>
           </div>
         </div>
         <div className={`text ${styles.message}`}>{text}</div>
