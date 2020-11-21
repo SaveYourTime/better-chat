@@ -29,5 +29,7 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'react/jsx-props-no-spreading': 'off',
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
+    'jsx-a11y/click-events-have-key-events': 'off',
+    'jsx-a11y/no-static-element-interactions': 'off',
   },
 };

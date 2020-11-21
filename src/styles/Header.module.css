@@ -1,0 +1,9 @@
+.username {
+  padding-left: 8px;
+}
+
+@media (max-width: 440px) {
+  .brand {
+    display: none !important;
+  }
+}
