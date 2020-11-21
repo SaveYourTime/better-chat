@@ -22,10 +22,10 @@ export default function Header() {
           />
           <div className={`content ${styles.username}`}>
             <div className="ui sub header">{displayName}</div>
-            <div>{email}</div>
+            <div data-testid="email">{email}</div>
           </div>
           <div className="menu">
-            <div className="item" onClick={() => firebase.auth().signOut()}>
+            <div className="item" onClick={() => firebase.auth().signOut()} data-testid="logout">
               <i className="logout icon" />
               Logout
             </div>

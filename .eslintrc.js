@@ -5,6 +5,7 @@ module.exports = {
     node: true,
   },
   extends: [
+    'plugin:cypress/recommended',
     'plugin:react/recommended',
     'plugin:import/errors',
     'plugin:import/warnings',
@@ -31,5 +32,6 @@ module.exports = {
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
     'jsx-a11y/click-events-have-key-events': 'off',
     'jsx-a11y/no-static-element-interactions': 'off',
+    'import/no-extraneous-dependencies': ['error', { devDependencies: ['cypress/**/*.js'] }],
   },
 };

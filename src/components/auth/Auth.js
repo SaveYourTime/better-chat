@@ -17,7 +17,7 @@ export default function Auth() {
     });
   }, []);
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} data-testid="auth">
       <div className="ui active tiny modal">
         <div className="header">
           Welcome to <em>BetterChat</em>

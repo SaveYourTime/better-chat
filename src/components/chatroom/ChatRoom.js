@@ -5,7 +5,7 @@ import MessageInput from './MessageInput';
 
 export default function ChatRoom() {
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} data-testid="chatroom">
       <Header />
       <Messages />
       <MessageInput />

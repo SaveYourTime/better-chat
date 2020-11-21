@@ -3,7 +3,7 @@ import styles from '../../styles/ChatRoom.module.css';
 export default function Message({ message }) {
   const { text, username, photoURL, createdAt } = message;
   return (
-    <div className="comment">
+    <div className="comment" data-testid="message">
       <div className="avatar">
         <img
           src={photoURL || 'https://semantic-ui.com/images/avatar/small/christian.jpg'}

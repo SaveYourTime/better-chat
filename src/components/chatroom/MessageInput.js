@@ -30,6 +30,7 @@ export default function MessageInput() {
             placeholder="Type a message..."
             value={text}
             onChange={handleMessageChange}
+            data-testid="message-input"
           />
           <button type="submit" className="ui icon secondary button" disabled={!text}>
             <i className="paper plane icon" />
