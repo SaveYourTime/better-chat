@@ -20,6 +20,8 @@ describe('ChatRoom', () => {
   });
 
   it('[READ] should see the message we just previous sent', () => {
+    // eslint-disable-next-line cypress/no-unnecessary-waiting
+    cy.wait(1000);
     cy.get('[data-testid="message"]').last().should('contain.text', message);
   });
 
