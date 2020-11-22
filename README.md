@@ -58,5 +58,6 @@ Using `Cypress` to test both logic and view, such as log in the chatroom, see an
 1. Auth is the login page, only support for `Google Login` currently.
 2. After login, your `name` and `email` will display on the top right corner
 3. You can `see` the latest 30 messages (if exist) by default
-4. You can `send` any text or emoji to the chatroom by typing the message at the bottom of the input, then press enter or tap the send button to send it
-5. If anyone else sends a message to the chatroom, you can see it rapidly without reloading needed
+4. You can `see old messages` by tapping the `Load Previous` button
+5. You can `send` any text or emoji to the chatroom by typing the message at the bottom of the input, then press enter or tap the send button to send it
+6. If anyone else sends a message to the chatroom, you can see it rapidly without reloading needed

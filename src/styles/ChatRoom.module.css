@@ -19,3 +19,13 @@
 .message {
   min-height: 18px;
 }
+
+.loadPreviousButton {
+  margin: 0 auto !important;
+  display: block !important;
+  width: fit-content;
+}
+
+.hidden {
+  display: none !important;
+}
