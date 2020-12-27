@@ -3,13 +3,12 @@ import { useEffect } from 'react';
 import firebase from 'firebase/app';
 import styles from '../../styles/Auth.module.css';
 
-const uiConfig = {
-  signInOptions: [firebase.auth.GoogleAuthProvider.PROVIDER_ID],
-  signInFlow: 'popup',
-};
-
 export default function Auth() {
   useEffect(() => {
+    const uiConfig = {
+      signInOptions: [firebase.auth.GoogleAuthProvider.PROVIDER_ID],
+      signInFlow: 'popup',
+    };
     import('firebaseui').then((firebaseui) => {
       const ui =
         firebaseui.auth.AuthUI.getInstance() ?? new firebaseui.auth.AuthUI(firebase.auth());
